@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicon/favicon.ico" />
+  <title>Spotify Sign Up</title>
+</head>
+
+<body>
+  <!-- Container -->
+
+  <section class="container">
+    <!-- Subscription -->
+
+    <article class="subscription">
+      <!-- Subscription - Title -->
+
+      <h1 class="subscription__title">Music for everyone.</h1>
+      <h2 class="subscription__title--2">Premium Subscription</h2>
+
+      <!-- Subscription - Price -->
+
+      <h1 class="subscription__price">
+        $9.99 <span class="small-text">&nbsp;/ &nbsp;month</span>
+      </h1>
+
+      <!-- Subscription - What to expect -->
+
+      <ul class="subscription__info">
+        <li>Shuffle play</li>
+        <li>Ad Free</li>
+        <li>Unlimited skips</li>
+        <li>Listen offline</li>
+        <li>Play any track</li>
+        <li>High quality Audio</li>
+      </ul>
+
+      <!-- Subscription - Mini Info -->
+
+      <p class="mini-info">
+        <span class="small-text">
+          Start your 30 day free trail*<br />
+          <span class="thick-text">Family</span> and
+          <span class="thick-text">Student</span> offers avalible</span>
+      </p>
+    </article>
+
+
+    <!-- Sign Up container -->
+
+    <article class="sign-up">
+      <!-- Sign Up  - Logo -->
+
+      <h1 class="logo"><i class="fab fa-spotify"></i> Spotify</h1>
+
+      <!-- Sign Up - Title -->
+
+      <h1 class="sign-up__title">
+        <span class="small-text">Sign In</span> &nbsp;
+        <span class="green-line">|</span> &nbsp; Sign Up
+      </h1>
+
+      <!-- Sign Up Form  -->
+      <form action="#" id="form">
+        <div class="form-input">
+          <label>Name</label>
+          <input type="text" name="text" placeholder="Enter your full name" id="name" />
+        </div>
+
+        <div class="form-input">
+          <label>Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email adress" />
+        </div>
+
+        <div class="form-input">
+          <label>Password <i class="far fa-eye" id="eye" aria-hidden="true" onclick="showPassword()"></i></label>
+          <input type="password" name="password" id="password" placeholder="Set a strong password (6+ charachters)" />
+        </div>
+
+        <div class="form-terms">
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label class="terms-conditionals">
+            I agree all
+            <span class="thick-underline">terms and conditionals</span>
+          </label>
+        </div>
+
+        <button id="btn" aria-label="Sign Up">Sign Up</button>
+      </form>
+    </article>
+  </section>
+
+
+  	<!-- Footer -->
+	
+	<footer class="footer">
+		<a
+		  href="https://github.com/anurag87204"
+		  class="footer-link"
+		  target="_blank"
+		  >Build and design by Anurag Rai</a
+		>
+	  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

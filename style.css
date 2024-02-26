@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --white: #fff;
+  --light-grey: #7d9096;
+  --body-light-green: #03ef8e;
+  --body-dark-green: #1a8c5e;
+  --card-light-green: #67e49b;
+  --card-dark-green: #18b853;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgb(32, 32, 32) 0%, #333 100%);
+  background-blend-mode: multiply, multiply;
+
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+
+  -webkit-user-select: none;
+}
+
+.small-text {
+  font-weight: 300;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--white);
+}
+
+.thick-text {
+  font-weight: 500;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--white);
+}
+
+/* Container */
+
+.container {
+  display: flex;
+padding-bottom: 100px;
+}
+
+/* Subscription  */
+
+.subscription {
+  background-image: linear-gradient(
+    150deg,
+    var(--card-light-green) 0%,
+    var(--card-dark-green) 100%
+  );
+
+  border-radius: 10px 0 0 10px;
+  padding: 100px;
+
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Subscription - Title  */
+
+.subscription__title {
+  font-weight: 900;
+  font-size: calc(25 / 16 *1rem);
+  color: var(--white);
+  text-align: center;
+}
+
+.subscription__title--2 {
+  font-weight: 700;
+  font-size: calc(20 / 16 * 1rem);
+
+  color: var(--white);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subscription .subscription__price {
+  font-weight: 900;
+  font-size: calc(20 / 16 * 1rem);
+  color: var(--white);
+  margin-left: 2rem;
+}
+
+.subscription .subscription__info {
+  line-height: 2.8;
+  margin: 10px 0;
+}
+
+.subscription .subscription__info li {
+  font-weight: 500;
+  margin-left: 40px;
+  font-size: 1rem;
+  color: var(--white);
+  letter-spacing: .5px;
+}
+
+.subscription .mini-info {
+  margin-left: 20px;
+  line-height: 2;
+  letter-spacing: .7px;
+}
+
+/* Sign Up */
+
+.sign-up {
+  background-image: linear-gradient(150deg, #306576 0%, #10262d 100%);
+  border-radius: 0 10px 10px 0;
+  padding: 100px;
+
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.364);
+}
+
+/* Logo */
+
+.sign-up .logo {
+  color: var(--white);
+  font-size: calc(30 / 16 * 1rem);
+  margin-bottom: 50px;
+}
+
+.sign-up .logo .fa-spotify {
+  color: var(--white);
+  font-size: calc(50 / 16 * 1rem);
+}
+
+/* Sign Up - Title */
+
+.sign-up .sign-up__title {
+    font-size: calc(18 / 16 * 1rem);
+
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.sign-up .sign-up__title .small-text {
+    font-size: calc(18 / 16 * 1rem);
+
+  color: var(--white);
+}
+
+.sign-up .sign-up__title .green-line {
+  color: var(--body-light-green);
+}
+
+/* Sign Up Form */
+
+#form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-input label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: var(--white);
+}
+
+.form-input input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+  padding: 5px 0;
+  width: 300px;
+  color: var(--white);
+}
+
+.form-input input[type="password"] {
+  position: relative;
+}
+
+.form-input .fa-eye {
+    transition: all .3s ease;
+    font-size: calc(18 / 16 * 1rem);
+
+  margin-left: 180px;
+  bottom: 370px;
+  position: absolute;
+  cursor: pointer;
+  z-index:  100px;
+  color: var(--light-grey);
+}
+
+/* Sign Up Form Terms And Cnditionals */
+
+.form-terms {
+  margin-top: .10px;
+  margin-bottom:  50px;
+}
+
+.form-terms input[type="checkbox"] {
+  margin-right: 5px;
+  width: 11px;
+  height: 11px;
+}
+
+.form-terms label {
+  font-size: 1rem;
+  color: var(--light-grey);
+  letter-spacing: .5px;
+}
+
+.form-terms label .thick-underline {
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: var(--card-light-green) underline dotted;
+}
+
+/* Sign Up Form Button */
+
+#form #btn {
+
+font-family: "Noto Sans JP", sans-serif;
+font-size: calc(13 / 16 * 1rem);
+font-weight: 600;
+padding: 8px 13px;
+border-radius: 30px;
+background-color: var(--white);
+border: var(--white) 1px solid;
+margin-left: 110px;
+cursor: pointer;
+color: #10262d;
+box-shadow: 2px 2px 20px rgba(19, 19, 19, 0.364);
+transition: all .3s ease;
+}
+
+
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+  }
+  
+  .footer-link,
+  .footer-link:visited {
+	text-decoration: none;
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	transition: all 0.3s ease;
+	display: inline-block;
+	position: relative;
+  }
+  
+  .footer-link::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+  background-image: linear-gradient(
+    150deg,
+    var(--card-light-green) 0%,
+    var(--card-dark-green) 100%
+  );	position: absolute;
+	bottom: 10%;
+	z-index: -1;
+	transition: all 0.3s ease;
+	border-radius: 1px;
+  }
+  
+  .footer-link:hover {
+	transition: all 0.3s ease;
+  color: #333;
+  }
+  
+  .footer-link:hover::after {
+	height: 17px;
+  }

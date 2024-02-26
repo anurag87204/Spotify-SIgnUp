@@ -1,0 +1,37 @@
+:root {
+    --white: #fff;
+    --light-grey: #7d9096;
+    --body-light-green: #03ef8e;
+    --body-dark-green: #1a8c5e;
+    --card-light-green: #67e49b;
+    --card-dark-green: #18b853;
+  }
+  
+  /* Sign Up Form Button */
+  
+  #form #btn:hover {
+    
+   color: var(--card-dark-green);
+  
+    }
+  
+  
+    #form #btn:focus {
+    outline: none;
+     
+       }
+  
+  
+       .form-input input:focus {
+      outline: none;
+      background: none;
+      }
+  
+      .form-input input::placeholder {
+       color: var(--light-grey);
+      }
+  
+      .form-input input::selection {
+        background-color: var(--body-light-green);
+        color: var(--white);
+       }
